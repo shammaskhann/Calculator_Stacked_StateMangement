@@ -36,20 +36,20 @@ class HomeScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Column(children: [
-                                  RoundedButton(
-                                    text: 'e',
-                                    onTap: () {
-                                      viewmodel.expPressed();
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.06, // 6% of screen height
-                                    width: screenSize.width *
-                                        0.18, // 15% of screen width
-                                  ),
+                                  // RoundedButton(
+                                  //   text: 'e',
+                                  //   onTap: () {
+                                  //     viewmodel.expPressed();
+                                  //   },
+                                  //   textColor: AppColors.buttonText,
+                                  //   backgroundColor:
+                                  //       AppColors.buttonGreyBackground,
+                                  //   fontSize: 30,
+                                  //   height: screenSize.height *
+                                  //       0.06, // 6% of screen height
+                                  //   width: screenSize.width *
+                                  //       0.18, // 15% of screen width
+                                  // ),
                                   CustomButton(
                                     text: 'AC',
                                     onTap: () {
@@ -104,20 +104,20 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ]),
                                 Column(children: [
-                                  RoundedButton(
-                                    text: 'π',
-                                    onTap: () {
-                                      viewmodel.piPressed();
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.06, // 6% of screen height
-                                    width: screenSize.width *
-                                        0.18, // 15% of screen width
-                                  ),
+                                  // RoundedButton(
+                                  //   text: 'π',
+                                  //   onTap: () {
+                                  //     viewmodel.piPressed();
+                                  //   },
+                                  //   textColor: AppColors.buttonText,
+                                  //   backgroundColor:
+                                  //       AppColors.buttonGreyBackground,
+                                  //   fontSize: 30,
+                                  //   height: screenSize.height *
+                                  //       0.06, // 6% of screen height
+                                  //   width: screenSize.width *
+                                  //       0.18, // 15% of screen width
+                                  // ),
                                   CustomButton(
                                     text: '<--',
                                     onTap: () {
@@ -189,19 +189,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          RoundedButton(
-                            text: 'sin',
-                            onTap: () {
-                              viewmodel.sinPressed();
-                            },
-                            textColor: AppColors.buttonText,
-                            backgroundColor: AppColors.buttonGreyBackground,
-                            fontSize: 25,
-                            height:
-                                screenSize.height * 0.06, // 6% of screen height
-                            width:
-                                screenSize.width * 0.18, // 15% of screen width
-                          ),
+                          // RoundedButton(
+                          //   text: 'sin',
+                          //   onTap: () {
+                          //     viewmodel.sinPressed();
+                          //   },
+                          //   textColor: AppColors.buttonText,
+                          //   backgroundColor: AppColors.buttonGreyBackground,
+                          //   fontSize: 25,
+                          //   height:
+                          //       screenSize.height * 0.06, // 6% of screen height
+                          //   width:
+                          //       screenSize.width * 0.18, // 15% of screen width
+                          // ),
                           CustomButton(
                               text: "/",
                               onTap: () {
@@ -261,19 +261,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          RoundedButton(
-                            text: 'cos',
-                            onTap: () {
-                              viewmodel.cosPressed();
-                            },
-                            textColor: AppColors.buttonText,
-                            backgroundColor: AppColors.buttonGreyBackground,
-                            fontSize: 25,
-                            height:
-                                screenSize.height * 0.06, // 6% of screen height
-                            width:
-                                screenSize.width * 0.18, // 15% of screen width
-                          ),
+                          // RoundedButton(
+                          //   text: 'cos',
+                          //   onTap: () {
+                          //     viewmodel.cosPressed();
+                          //   },
+                          //   textColor: AppColors.buttonText,
+                          //   backgroundColor: AppColors.buttonGreyBackground,
+                          //   fontSize: 25,
+                          //   height:
+                          //       screenSize.height * 0.06, // 6% of screen height
+                          //   width:
+                          //       screenSize.width * 0.18, // 15% of screen width
+                          // ),
                           CustomButton(
                               text: "*",
                               onTap: () {
