@@ -17,160 +17,167 @@ class HomeScreen extends StatelessWidget {
         builder: (context, viewmodel, child) {
           return Scaffold(
             body: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 //Caclulator Display
-                Expanded(flex: 1, child: DisplayScreen()),
+                Expanded(flex: 2, child: DisplayScreen()),
                 //Calculator keys
                 Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Column(
+                        mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
+                              mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Column(children: [
-                                  // RoundedButton(
-                                  //   text: 'e',
-                                  //   onTap: () {
-                                  //     viewmodel.expPressed();
-                                  //   },
-                                  //   textColor: AppColors.buttonText,
-                                  //   backgroundColor:
-                                  //       AppColors.buttonGreyBackground,
-                                  //   fontSize: 30,
-                                  //   height: screenSize.height *
-                                  //       0.06, // 6% of screen height
-                                  //   width: screenSize.width *
-                                  //       0.18, // 15% of screen width
-                                  // ),
-                                  CustomButton(
-                                    text: 'AC',
-                                    onTap: () {
-                                      viewmodel.clear();
-                                    },
-                                    textColor: AppColors.buttonText3,
-                                    backgroundColor:
-                                        AppColors.functionButtonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '7',
-                                    onTap: () {
-                                      viewmodel.numberPressed(7);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '4',
-                                    onTap: () {
-                                      viewmodel.numberPressed(4);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '1',
-                                    onTap: () {
-                                      viewmodel.numberPressed(1);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                ]),
-                                Column(children: [
-                                  // RoundedButton(
-                                  //   text: 'π',
-                                  //   onTap: () {
-                                  //     viewmodel.piPressed();
-                                  //   },
-                                  //   textColor: AppColors.buttonText,
-                                  //   backgroundColor:
-                                  //       AppColors.buttonGreyBackground,
-                                  //   fontSize: 30,
-                                  //   height: screenSize.height *
-                                  //       0.06, // 6% of screen height
-                                  //   width: screenSize.width *
-                                  //       0.18, // 15% of screen width
-                                  // ),
-                                  CustomButton(
-                                    text: '<--',
-                                    onTap: () {
-                                      viewmodel.backspace();
-                                    },
-                                    textColor: AppColors.buttonText3,
-                                    backgroundColor:
-                                        AppColors.functionButtonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '8',
-                                    onTap: () {
-                                      viewmodel.numberPressed(8);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '5',
-                                    onTap: () {
-                                      viewmodel.numberPressed(5);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                  CustomButton(
-                                    text: '2',
-                                    onTap: () {
-                                      viewmodel.numberPressed(2);
-                                    },
-                                    textColor: AppColors.buttonText,
-                                    backgroundColor:
-                                        AppColors.buttonGreyBackground,
-                                    fontSize: 30,
-                                    height: screenSize.height *
-                                        0.1, // 10% of screen height
-                                    width: screenSize.width * 0.2,
-                                  ),
-                                ]),
+                                Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      // RoundedButton(
+                                      //   text: 'e',
+                                      //   onTap: () {
+                                      //     viewmodel.expPressed();
+                                      //   },
+                                      //   textColor: AppColors.buttonText,
+                                      //   backgroundColor:
+                                      //       AppColors.buttonGreyBackground,
+                                      //   fontSize: 30,
+                                      //   height: screenSize.height *
+                                      //       0.06, // 6% of screen height
+                                      //   width: screenSize.width *
+                                      //       0.18, // 15% of screen width
+                                      // ),
+                                      CustomButton(
+                                        text: 'AC',
+                                        onTap: () {
+                                          viewmodel.clear();
+                                        },
+                                        textColor: AppColors.buttonText3,
+                                        backgroundColor: AppColors
+                                            .functionButtonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '7',
+                                        onTap: () {
+                                          viewmodel.numberPressed(7);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '4',
+                                        onTap: () {
+                                          viewmodel.numberPressed(4);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '1',
+                                        onTap: () {
+                                          viewmodel.numberPressed(1);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                    ]),
+                                Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      // RoundedButton(
+                                      //   text: 'π',
+                                      //   onTap: () {
+                                      //     viewmodel.piPressed();
+                                      //   },
+                                      //   textColor: AppColors.buttonText,
+                                      //   backgroundColor:
+                                      //       AppColors.buttonGreyBackground,
+                                      //   fontSize: 30,
+                                      //   height: screenSize.height *
+                                      //       0.06, // 6% of screen height
+                                      //   width: screenSize.width *
+                                      //       0.18, // 15% of screen width
+                                      // ),
+                                      CustomButton(
+                                        text: '<--',
+                                        onTap: () {
+                                          viewmodel.backspace();
+                                        },
+                                        textColor: AppColors.buttonText3,
+                                        backgroundColor: AppColors
+                                            .functionButtonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '8',
+                                        onTap: () {
+                                          viewmodel.numberPressed(8);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '5',
+                                        onTap: () {
+                                          viewmodel.numberPressed(5);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                      CustomButton(
+                                        text: '2',
+                                        onTap: () {
+                                          viewmodel.numberPressed(2);
+                                        },
+                                        textColor: AppColors.buttonText,
+                                        backgroundColor:
+                                            AppColors.buttonGreyBackground,
+                                        fontSize: 30,
+                                        height: screenSize.height *
+                                            0.1, // 10% of screen height
+                                        width: screenSize.width * 0.2,
+                                      ),
+                                    ]),
                               ]),
                           // = button
                           CustomButton(
@@ -188,6 +195,7 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                       Column(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           // RoundedButton(
                           //   text: 'sin',
@@ -260,6 +268,7 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                       Column(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           // RoundedButton(
                           //   text: 'cos',
@@ -283,7 +292,7 @@ class HomeScreen extends StatelessWidget {
                               backgroundColor: AppColors.darkBlue,
                               height: screenSize.height *
                                   0.1, // 10% of screen height
-                              width: screenSize.width * 0.2,
+                              width: screenSize.width * 0.19,
                               fontSize: 40),
                           CustomButton(
                               text: "-",
@@ -294,7 +303,7 @@ class HomeScreen extends StatelessWidget {
                               backgroundColor: AppColors.darkBlue,
                               height: screenSize.height *
                                   0.1, // 10% of screen height
-                              width: screenSize.width * 0.2,
+                              width: screenSize.width * 0.19,
                               fontSize: 40),
                           CustomButton(
                               text: "+",
@@ -305,7 +314,7 @@ class HomeScreen extends StatelessWidget {
                               backgroundColor: AppColors.darkBlue,
                               height: screenSize.height *
                                   0.1, // 10% of screen height
-                              width: screenSize.width * 0.2,
+                              width: screenSize.width * 0.19,
                               fontSize: 40),
                           CustomButton(
                             text: '=',
@@ -317,7 +326,7 @@ class HomeScreen extends StatelessWidget {
                             fontSize: 30,
                             height:
                                 screenSize.height * 0.2, // 20% of screen height
-                            width: screenSize.width * 0.2,
+                            width: screenSize.width * 0.19,
                           ),
                         ],
                       )

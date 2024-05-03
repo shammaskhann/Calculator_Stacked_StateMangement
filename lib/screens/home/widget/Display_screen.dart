@@ -55,7 +55,6 @@ class DisplayScreen extends ViewModelWidget<HomeViewModel> {
           ),
           //Calculator Display
           Container(
-            height: screenSize.height * 0.05,
             width: double.infinity,
             color: AppColors.mainBackGround,
             child: Padding(
